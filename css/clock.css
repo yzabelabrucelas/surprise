@@ -1,0 +1,28 @@
+#clockdiv{
+	font-family: 'Teko', sans-serif;
+	color: #FF4343;
+	display: inline-block;
+	font-weight: 100;
+	font-size: 40px;
+	left:150px;
+}
+
+#clockdiv > div{
+	padding: 10px;
+	border-radius: 3px;
+	background: #F5F5F5;
+	display: inline-block;
+	
+}
+
+#clockdiv div > #minutes, #seconds{
+	padding: 15px;
+	border-radius: 3px;
+	background: #90A4AE;
+	display: inline-block;
+}
+
+.smalltext{
+	padding-top: 5px;
+	font-size: 16px;
+}

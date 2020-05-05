@@ -1,0 +1,151 @@
+<!DOCTYPE HTML> 
+<html> 
+<head> 
+   <!-- Clock CSS -->
+   <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+   <title>HBD 🎁💛</title>
+   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/animate.css">
+<style> 
+p { 
+font-family: 'Press Start 2P', cursive;
+} 
+
+.btn-outline-success {
+  color: #63de00;
+  border-color: #000;
+}
+.btn-outline-success:hover {
+  color: #fff;
+  background-color: #63de00;
+  border-color: #000;
+}
+
+.hideDiv
+{
+  font-size: 30px;
+}
+
+a
+{
+  font-family: 'Press Start 2P', cursive;
+}
+h1
+{
+  text-align: center;
+  padding-top:250px;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #3c434a;
+}
+
+.console {
+  font-family: 'Fira Mono';
+  width: 700px;
+  height: 450px;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.console header {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: #555;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  color: #DDD;
+}
+
+.console .consolebody {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-sizing: border-box;
+  padding: 20px;
+  height: calc(100% - 40px);
+  overflow: scroll;
+  background-color: #000;
+  color: #63de00;
+  font-size: 10px;
+}
+
+.console .consolebody p {
+  line-height: 1.5rem;
+}
+
+</style> 
+</head> 
+<body id="clickDiv"> 
+
+
+  
+  <div class="console">
+    <header>
+      
+      <p style="text-align: left;padding-left: 15px;">Command Prompt</p>
+    </header>
+    <div class="consolebody">
+      <p>Microsoft Windows [Version 10.0.18362.778]</p>
+      <p>(c) 2019 Microsoft Corporation. All Rights reserved.</p>
+      <br>
+      <p>C:\Users\Administration\Documents\> more surprise.txt</p>
+      <p>C:\Users\Administration\Documents\> You're In For a Surprise!!!</p>
+      <center><p>Executing at:</p> <p id="demo" class="hideDiv"></p>
+<br><br>
+      <a id="preview" href="cake.html" style="color:white; font-size:14px;visibility: hidden" class="btn btn-outline-success animated infinite pulse">
+        PRESS TO CONTINUE...
+      </a>
+    </center>  
+    </div>
+
+    
+  </div>
+
+
+
+
+  <center>
+    
+  </center>
+
+
+<script> 
+var deadline = new Date("May 1, 2020 17:45:00").getTime(); 
+
+var x = setInterval(function() 
+{ 
+var now = new Date().getTime(); 
+var t = deadline - now; 
+var days = Math.floor(t / (1000 * 60 * 60 * 24)); 
+var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60)); 
+var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60)); 
+var seconds = Math.floor((t % (1000 * 60)) / 1000); 
+document.getElementById("demo").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds + "";
+	if (t < 0) { 
+		clearInterval(x); 
+    document.getElementById("demo").innerHTML = "expired"; 
+    document.getElementById("demo").style.color = 'tomato';
+	} 
+}, 1000); 
+
+</script> 
+
+<script>
+  function showButton() {
+    var now = new Date().getTime(); 
+    var t = deadline - now; 
+  document.getElementById("preview").style.visibility = "visible";
+}
+setTimeout("showButton()", 360000); // in ms
+</script>
+
+</body> 
+</html> 

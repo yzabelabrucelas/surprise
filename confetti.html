@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>canvas {
+ 
+        width: 100%;
+        top:120px;
+      }
+      </style>
+</head>
+<body>
+    <center>
+        <audio preload="auto" id="player" controls style="margin-top:120px">
+            <source src="https://www.8notes.com/school/mp32/piano/happy_birthday.mp3" type="audio/mp3">
+            </audio>
+    </center>
+
+
+    <canvas id="canvas">
+    </canvas>
+
+   
+
+
+<div id="div1" style="background-color: aqua;">
+    This is preview Div1. This is preview Div1.
+    </div>
+    
+    <div id="div2" style="background-color: blueviolet;">
+    This is preview Div2 to show after div 1 hides.
+    </div>
+    
+    <button id="preview" style="color:#999999; font-size:14px">
+    PREVIEW
+    </button>
+
+
+<script src="js/confetti.js"></script>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<!-- JS FOR SHOW DIV -->
+<script type="text/javascript">
+// Short-form of `document.ready`
+$(function(){
+    $("#div2").hide();
+    $("#preview").on("click", function(){
+        $("#div1, #div2").toggle();
+    });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+/* color changing */
+body{
+  text-align: center; 
+	overflow:hidden;
+	background:#3c434a;
+  font-family: 'Press Start 2P', cursive;
+}
+/* letetr */
+::selection {
+  background-color: black;
+  color:#63de00;
+}
+body
+{
+    background-color: #3c434a;
+}
+line{
+    font-family: 'Press Start 2P', cursive;
+    background-color: white;
+    
+}
+
+.letter
+{
+    color: #3c434a;
+    font-family: 'Source Code Pro', monospace;
+    font-size:12px;
+    text-align:justify;
+}
+
+#text {
+	margin-top:-150px;
+	margin-left:-120px;
+	width:120px;
+	top:50%; left:50%;
+	text-transform:uppercase;
+	color:#BE3E1B;
+	font-size:100%;
+	font-weight:bold;
+	text-shadow:-1px 1px 3px #DBC558, -1px 1px 1px #FFF38F;
+	text-align:center;
+}
+
+#preview
+{
+  font-family: 'Press Start 2P', cursive;
+  color:white; font-size:14px;
+  margin-top:10px;
+  padding: 10px;
+}
+
+.container {
+  width: 100%;
+  padding-right: auto;
+  padding-left: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+p { 
+text-align: center; 
+font-size: 60px; 
+font-family: 'Orbitron', sans-serif;
+color:tomato;
+} 
+
+.colorChange {
+      
+  font-family: 'Press Start 2P', cursive;
+  color:#313131;
+  font-weight: bold;
+  -webkit-animation:colorchange 20s infinite alternate;
+  padding-top: 3rem !important;
+  
+}
+
+@-webkit-keyframes colorchange {
+  0% {
+    
+    color: blue;
+  }
+  
+  10% {
+    
+    color: #8e44ad;
+  }
+  
+  20% {
+    
+    color: #1abc9c;
+  }
+  
+  30% {
+    
+    color: #d35400;
+  }
+  
+  40% {
+    
+    color: blue;
+  }
+  
+  50% {
+    
+    color: #34495e;
+  }
+  
+  60% {
+    
+    color: blue;
+  }
+  
+  70% {
+    
+    color: #2980b9;
+  }
+  80% {
+ 
+    color: #f1c40f;
+  }
+  
+  90% {
+ 
+    color: #2980b9;
+  }
+  
+  100% {
+    
+    color: pink;
+  }
+}
+
+/*  flashing hide button */
+.btn-dark{
+  animation-duration: 3s;
+  animation-delay: 60s;
+  animation-iteration-count: infinite;
+}
+
+
+.button-up,
+.button-down {
+  position: relative;
+  padding: 5px;
+  margin: 30px auto;
+  background: #000;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  transition: all 0.2s linear;
+}
+
+.button-up:hover {
+  transform: translate3d(0, -10px, 0);
+}
+
+.button-up::after,
+.button-down::after {
+  content: "";
+  position: absolute;
+  left: 17px;
+  z-index: 11;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+}
+.button-up::after {
+  top: 20px;
+  transform: rotate(45deg);
+}
+
+.button-down::after {
+  top: 10px;
+  transform: rotate(225deg);
+}

@@ -1,0 +1,72 @@
+p { 
+    font-family: 'Press Start 2P', cursive;
+    } 
+    
+    .btn-outline-success {
+      color: #63de00;
+      border-color: #000;
+    }
+    .btn-outline-success:hover {
+      color: #fff;
+      background-color: #63de00;
+      border-color: #000;
+    }
+    
+    .hideDiv
+    {
+      font-size: 30px;
+    }
+    
+    a
+    {
+      font-family: 'Press Start 2P', cursive;
+    }
+    h1
+    {
+      text-align: center;
+      padding-top:250px;
+    }
+    
+    body {
+      min-width: 100vw;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #3c434a;
+    }
+    
+    .console {
+      font-family: 'Fira Mono';
+      width: 700px;
+      height: 450px;
+      box-sizing: border-box;
+      margin: auto;
+    }
+    
+    .console header {
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      background-color: #555;
+      height: 45px;
+      line-height: 45px;
+      text-align: center;
+      color: #DDD;
+    }
+    
+    .console .consolebody {
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      box-sizing: border-box;
+      padding: 20px;
+      height: calc(100% - 40px);
+      overflow: scroll;
+      background-color: #000;
+      color: #63de00;
+      font-size: 10px;
+    }
+    
+    .console .consolebody p {
+      line-height: 1.5rem;
+    }
+    
