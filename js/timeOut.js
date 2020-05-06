@@ -23,4 +23,4 @@ document.getElementById("demo").innerHTML = days + ":" + hours + ":" + minutes +
     var t = deadline - now; 
   document.getElementById("preview").style.visibility = "visible";
 }
-setTimeout("showButton()", 120000); // in ms = 2 mins
+setTimeout("showButton()", 15000); // in ms = 15 sec
